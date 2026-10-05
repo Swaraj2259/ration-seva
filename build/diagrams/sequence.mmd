@@ -1,0 +1,35 @@
+sequenceDiagram
+    actor C as Citizen
+    participant UI as Portal UI
+    participant IS as Intake Service
+    participant RE as RuleEngine
+    participant DB as Database
+    participant Q as Request Queue
+    participant AS as Approval Service
+    actor O as Officer
+    participant N as NotificationService
+
+    C->>UI: Login with mobile + OTP
+    C->>UI: Select "Add Member", enter member details
+    C->>UI: Upload birth cert / marriage cert
+    UI->>IS: submitRequest(cardNo, member, docs)
+    IS->>RE: evaluate(ADD_MEMBER, card, member)
+    RE-->>IS: Eligible (members <= max, docs complete)
+    alt Not eligible
+        IS-->>UI: Show reason
+    else Eligible
+        IS->>DB: save ServiceRequest (Submitted)
+        IS->>Q: publish RequestSubmitted(requestId)
+        IS->>N: sendSMS("Request received")
+        IS-->>UI: requestId
+        Q-->>AS: RequestSubmitted(requestId)
+        AS->>DB: create ApprovalTask (PendingApproval)
+        O->>AS: open task, verify documents
+        alt Approve
+            AS->>DB: add FamilyMember, status = Approved
+            AS->>N: sendSMS("Member added")
+        else Reject / Return
+            AS->>DB: status = Rejected / ClarificationRequired
+            AS->>N: sendSMS("Action needed / Rejected")
+        end
+    end

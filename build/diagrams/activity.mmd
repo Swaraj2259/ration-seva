@@ -1,0 +1,16 @@
+flowchart TD
+    S((Start)) --> L[Citizen logs in with OTP]
+    L --> T[Select request type]
+    T --> F[Fill form]
+    F --> U[Upload documents]
+    U --> V{Eligibility & document check}
+    V -- Fail --> E[Show error / missing items] --> F
+    V -- Pass --> SB[Submit request + SMS acknowledgement]
+    SB --> OV[Officer verifies documents]
+    OV --> D{Decision}
+    D -- Return --> CL[Citizen gets SMS to clarify] --> U
+    D -- Reject --> RJ[Record reason + SMS] --> X((End))
+    D -- Approve --> AP[Update ration card record]
+    AP --> SM[Send approval SMS]
+    SM --> IS[Issue / print card]
+    IS --> X

@@ -1,0 +1,8 @@
+flowchart LR
+    S1["1. Capture<br/>CR form from State GO"] --> S2["2. Understand reason<br/>GO no., effective date"]
+    S2 --> S3["3. Analyse impact<br/>scope, time, cost, quality"]
+    S3 --> S4{"4. Decide<br/>District Supply Officer"}
+    S4 -- Approve --> S5["5. Update plan<br/>schedule, tests, SRS"]
+    S4 -- Reject / Defer --> L[("Change Log")]
+    S5 --> S6["6. Implement & verify<br/>new rule version + regression"]
+    S6 --> L

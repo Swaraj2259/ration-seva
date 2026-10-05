@@ -1,0 +1,31 @@
+flowchart LR
+    C["👤 Citizen"]
+    O["👤 Supply Officer"]
+    A["👤 Admin / Staff"]
+    SMS["⚙ SMS Gateway"]
+    subgraph RS["RationSeva System"]
+        UC1(["Register / Login (OTP)"])
+        UC2(["Submit Service Request"])
+        UC3(["Upload Documents"])
+        UC4(["Track Request Status"])
+        UC5(["Review Request"])
+        UC6(["Approve / Reject / Return"])
+        UC7(["Manage Eligibility Rules"])
+        UC8(["Generate Reports"])
+        UC9(["Send SMS Alert"])
+        UC10(["Check Eligibility"])
+    end
+    C --- UC1
+    C --- UC2
+    C --- UC4
+    UC2 -. include .-> UC3
+    UC2 -. include .-> UC10
+    O --- UC1
+    O --- UC5
+    O --- UC6
+    O --- UC8
+    A --- UC7
+    A --- UC8
+    UC6 -. include .-> UC9
+    UC2 -. include .-> UC9
+    UC9 --- SMS

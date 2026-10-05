@@ -1,0 +1,89 @@
+classDiagram
+    class User {
+      +userId: String
+      +name: String
+      +mobile: String
+      +login()
+    }
+    class Citizen {
+      +aadhaarNo: String
+      +submitRequest()
+      +trackStatus()
+    }
+    class Officer {
+      +designation: String
+      +reviewRequest()
+      +decide()
+    }
+    class Admin {
+      +updateRule()
+    }
+    class RationCard {
+      +cardNo: String
+      +category: String
+      +address: String
+      +annualIncome: int
+      +addMember()
+      +removeMember()
+    }
+    class FamilyMember {
+      +memberId: String
+      +name: String
+      +relation: String
+      +dob: Date
+    }
+    class ServiceRequest {
+      +requestId: String
+      +type: RequestType
+      +status: RequestStatus
+      +submittedOn: Date
+      +submit()
+      +changeStatus()
+    }
+    class Document {
+      +docId: String
+      +docType: String
+      +fileRef: String
+      +verified: boolean
+    }
+    class EligibilityRule {
+      +ruleId: String
+      +requestType: RequestType
+      +version: int
+      +effectiveFrom: Date
+      +incomeLimit: int
+      +maxMembers: int
+    }
+    class RuleEngine {
+      +evaluate(req): Result
+    }
+    class ApprovalTask {
+      +taskId: String
+      +decision: String
+      +remarks: String
+      +decidedOn: Date
+    }
+    class NotificationService {
+      +sendSMS(mobile, msg)
+    }
+    class AuditLog {
+      +logId: String
+      +action: String
+      +actor: String
+      +timestamp: Date
+    }
+    User <|-- Citizen
+    User <|-- Officer
+    User <|-- Admin
+    Citizen "1" --> "1..*" RationCard : holds
+    RationCard "1" *-- "1..15" FamilyMember
+    Citizen "1" --> "0..*" ServiceRequest : raises
+    ServiceRequest "1" *-- "1..*" Document
+    ServiceRequest "*" --> "1" RationCard : concerns
+    ServiceRequest ..> RuleEngine : checked by
+    RuleEngine --> EligibilityRule : uses
+    ServiceRequest "1" --> "0..1" ApprovalTask
+    Officer "1" --> "0..*" ApprovalTask : decides
+    ServiceRequest ..> NotificationService : notifies
+    ServiceRequest ..> AuditLog : records
+    Admin --> EligibilityRule : maintains

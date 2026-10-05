@@ -1,0 +1,35 @@
+# Dependencies
+node_modules
+/.pnp
+.pnp.js
+
+# Production & Build
+.next/
+out/
+build/node_modules
+docs/build/node_modules
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Environment Variables
+.env
+.env*.local
+
+# System & IDE
+.DS_Store
+*.pem
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Types
+next-env.d.ts

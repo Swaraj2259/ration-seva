@@ -1,0 +1,16 @@
+stateDiagram-v2
+    [*] --> Draft
+    Draft --> Submitted : submit() [eligible]
+    Draft --> Cancelled : cancel()
+    Submitted --> UnderVerification : officer opens
+    UnderVerification --> ClarificationRequired : docs missing
+    ClarificationRequired --> Submitted : citizen resubmits
+    ClarificationRequired --> Cancelled : no reply in 15 days
+    UnderVerification --> PendingApproval : docs verified
+    PendingApproval --> Approved : approve()
+    PendingApproval --> Rejected : reject(remarks)
+    Approved --> CardIssued : card printed/updated
+    CardIssued --> Closed
+    Rejected --> Closed
+    Cancelled --> [*]
+    Closed --> [*]

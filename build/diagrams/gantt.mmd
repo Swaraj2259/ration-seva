@@ -1,0 +1,19 @@
+gantt
+    title RationSeva Schedule (44 days, Day 0 = 02-Nov-2026)
+    dateFormat YYYY-MM-DD
+    axisFormat %d-%b
+    section Analysis
+    Requirements (6d)            :crit, req, 2026-11-02, 6d
+    M1 SRS Signed-off            :milestone, m1, after req, 0d
+    section Build
+    Service rules - 5 types (8d) :crit, rules, after req, 8d
+    Application portal (14d)     :portal, after req, 14d
+    Float 11d                    :done, fl, after portal, 11d
+    Officer approval workflow (12d):crit, appr, after rules, 12d
+    Status & SMS (5d)            :crit, sms, after appr, 5d
+    M2 Build Complete            :milestone, m2, after sms, 0d
+    section Release
+    Testing (8d)                 :crit, test, after sms, 8d
+    M3 UAT Sign-off              :milestone, m3, after test, 0d
+    Staff training (5d)          :crit, train, after test, 5d
+    M4 Go-Live                   :milestone, m4, after train, 0d

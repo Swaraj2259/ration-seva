@@ -1,0 +1,836 @@
+{
+  "requests": [
+    {
+      "id": "RS-2026-000109",
+      "type": "NEW_CARD",
+      "applicantName": "Swaraj Wattamwar",
+      "mobile": "9876543210",
+      "aadhaar": "XXXXXXXX4821",
+      "rationCardNo": "PENDING_ISSUANCE",
+      "familyMembersCount": 4,
+      "annualIncome": 85000,
+      "category": "PHH (Priority)",
+      "address": "Flat 402, Sai Vihar, Kothrud, Pune",
+      "subDistrict": "Pune City",
+      "documents": [
+        {
+          "name": "aadhaar_card_applicant.pdf",
+          "sizeKb": 380,
+          "type": "application/pdf",
+          "uploadedAt": "2026-10-05T04:38:39.420Z"
+        },
+        {
+          "name": "electricity_bill_residence.pdf",
+          "sizeKb": 450,
+          "type": "application/pdf",
+          "uploadedAt": "2026-10-05T04:38:39.420Z"
+        }
+      ],
+      "status": "Card Issued",
+      "submittedAt": "2026-10-05T04:38:39.420Z",
+      "ruleVersion": "v1.3",
+      "slaDays": 15,
+      "slaBreached": false,
+      "history": [
+        {
+          "status": "Submitted",
+          "timestamp": "2026-10-05T04:38:39.420Z",
+          "actor": "Swaraj Wattamwar",
+          "actorRole": "Citizen",
+          "remarks": "Online application submitted through RationSeva portal."
+        },
+        {
+          "status": "Approved",
+          "timestamp": "2026-10-05T04:39:39.029Z",
+          "actor": "Inspector R. Shinde",
+          "actorRole": "Supply Officer"
+        },
+        {
+          "status": "Card Issued",
+          "timestamp": "2026-10-05T04:39:46.095Z",
+          "actor": "Inspector R. Shinde",
+          "actorRole": "Supply Officer"
+        }
+      ]
+    },
+    {
+      "id": "RS-2026-000108",
+      "type": "ADD_MEMBER",
+      "applicantName": "Sunita Ramesh Patil",
+      "mobile": "9876543210",
+      "aadhaar": "XXXXXXXX4821",
+      "rationCardNo": "MH-PN-1023",
+      "familyMembersCount": 1,
+      "annualIncome": 85000,
+      "category": "PHH (Priority)",
+      "address": "Flat 402, Sai Vihar, Kothrud, Pune",
+      "subDistrict": "Pune City",
+      "documents": [
+        {
+          "name": "aadhaar_card_applicant.pdf",
+          "sizeKb": 380,
+          "type": "application/pdf",
+          "uploadedAt": "2026-10-05T04:33:55.081Z"
+        },
+        {
+          "name": "electricity_bill_residence.pdf",
+          "sizeKb": 450,
+          "type": "application/pdf",
+          "uploadedAt": "2026-10-05T04:33:55.081Z"
+        }
+      ],
+      "status": "Submitted",
+      "submittedAt": "2026-10-05T04:33:55.081Z",
+      "ruleVersion": "v1.3",
+      "slaDays": 15,
+      "slaBreached": false,
+      "history": [
+        {
+          "status": "Submitted",
+          "timestamp": "2026-10-05T04:33:55.081Z",
+          "actor": "Sunita Ramesh Patil",
+          "actorRole": "Citizen",
+          "remarks": "Online application submitted through RationSeva portal."
+        }
+      ]
+    },
+    {
+      "id": "RS-2026-000107",
+      "type": "NEW_CARD",
+      "applicantName": "Sunita Ramesh Patil",
+      "mobile": "9876543210",
+      "aadhaar": "XXXXXXXX4821",
+      "rationCardNo": "PENDING_ISSUANCE",
+      "familyMembersCount": 5,
+      "annualIncome": 85000,
+      "category": "PHH (Priority)",
+      "address": "Flat 402, Sai Vihar, Kothrud, Pune",
+      "subDistrict": "Pune City",
+      "documents": [
+        {
+          "name": "aadhaar_card_applicant.pdf",
+          "sizeKb": 380,
+          "type": "application/pdf",
+          "uploadedAt": "2026-10-04T18:07:18.092Z"
+        },
+        {
+          "name": "electricity_bill_residence.pdf",
+          "sizeKb": 450,
+          "type": "application/pdf",
+          "uploadedAt": "2026-10-04T18:07:18.092Z"
+        }
+      ],
+      "status": "Card Issued",
+      "submittedAt": "2026-10-04T18:07:18.092Z",
+      "ruleVersion": "v1.3",
+      "slaDays": 15,
+      "slaBreached": false,
+      "history": [
+        {
+          "status": "Submitted",
+          "timestamp": "2026-10-04T18:07:18.092Z",
+          "actor": "Sunita Ramesh Patil",
+          "actorRole": "Citizen",
+          "remarks": "Online application submitted through RationSeva portal."
+        },
+        {
+          "status": "Under Verification",
+          "timestamp": "2026-10-04T18:08:12.375Z",
+          "actor": "Inspector R. Shinde",
+          "actorRole": "Supply Officer"
+        },
+        {
+          "status": "Approved",
+          "timestamp": "2026-10-04T18:08:15.025Z",
+          "actor": "Inspector R. Shinde",
+          "actorRole": "Supply Officer"
+        },
+        {
+          "status": "Card Issued",
+          "timestamp": "2026-10-04T18:09:04.465Z",
+          "actor": "Inspector R. Shinde",
+          "actorRole": "Supply Officer"
+        }
+      ]
+    },
+    {
+      "id": "RS-2026-000106",
+      "type": "NEW_CARD",
+      "applicantName": "Sunita Ramesh Patil",
+      "mobile": "9876543210",
+      "aadhaar": "XXXXXXXX4821",
+      "rationCardNo": "PENDING_ISSUANCE",
+      "familyMembersCount": 4,
+      "annualIncome": 85000,
+      "category": "PHH (Priority)",
+      "address": "Flat 402, Sai Vihar, Kothrud, Pune",
+      "subDistrict": "Pune City",
+      "documents": [
+        {
+          "name": "aadhaar_card_applicant.pdf",
+          "sizeKb": 380,
+          "type": "application/pdf",
+          "uploadedAt": "2026-10-03T16:44:59.310Z"
+        },
+        {
+          "name": "electricity_bill_residence.pdf",
+          "sizeKb": 450,
+          "type": "application/pdf",
+          "uploadedAt": "2026-10-03T16:44:59.310Z"
+        }
+      ],
+      "status": "Card Issued",
+      "submittedAt": "2026-10-03T16:44:59.310Z",
+      "ruleVersion": "v1.0",
+      "slaDays": 15,
+      "slaBreached": false,
+      "history": [
+        {
+          "status": "Submitted",
+          "timestamp": "2026-10-03T16:44:59.310Z",
+          "actor": "Sunita Ramesh Patil",
+          "actorRole": "Citizen",
+          "remarks": "Online application submitted through RationSeva portal."
+        },
+        {
+          "status": "Under Verification",
+          "timestamp": "2026-10-03T17:09:00.048Z",
+          "actor": "Inspector R. Shinde",
+          "actorRole": "Supply Officer"
+        },
+        {
+          "status": "Pending Approval",
+          "timestamp": "2026-10-03T17:09:06.431Z",
+          "actor": "Inspector R. Shinde",
+          "actorRole": "Supply Officer"
+        },
+        {
+          "status": "Approved",
+          "timestamp": "2026-10-03T17:09:10.645Z",
+          "actor": "Inspector R. Shinde",
+          "actorRole": "Supply Officer"
+        },
+        {
+          "status": "Card Issued",
+          "timestamp": "2026-10-03T17:09:13.526Z",
+          "actor": "Inspector R. Shinde",
+          "actorRole": "Supply Officer"
+        }
+      ]
+    },
+    {
+      "id": "RS-2026-000101",
+      "type": "ADD_MEMBER",
+      "applicantName": "Sunita Ramesh Patil",
+      "mobile": "9876543210",
+      "aadhaar": "XXXXXXXX4821",
+      "rationCardNo": "MH-PN-1023",
+      "familyMembersCount": 4,
+      "annualIncome": 85000,
+      "category": "PHH (Priority)",
+      "address": "Plot 14, Shanti Nagar, Haveli Tehsil, District Pune",
+      "subDistrict": "Haveli",
+      "documents": [
+        {
+          "name": "daughter_birth_certificate.pdf",
+          "sizeKb": 340,
+          "type": "application/pdf",
+          "uploadedAt": "2026-09-28T09:15:00Z"
+        },
+        {
+          "name": "aadhaar_card_child.jpg",
+          "sizeKb": 420,
+          "type": "image/jpeg",
+          "uploadedAt": "2026-09-28T09:16:00Z"
+        }
+      ],
+      "status": "Pending Approval",
+      "submittedAt": "2026-09-28T09:16:00Z",
+      "ruleVersion": "v1.0",
+      "slaDays": 15,
+      "slaBreached": false,
+      "history": [
+        {
+          "status": "Submitted",
+          "timestamp": "2026-09-28T09:16:00Z",
+          "actor": "Sunita Patil",
+          "actorRole": "Citizen"
+        },
+        {
+          "status": "Under Verification",
+          "timestamp": "2026-09-29T11:30:00Z",
+          "actor": "Clerk M. Kulkarni",
+          "actorRole": "Supply Officer",
+          "remarks": "Physical inspection of birth certificate verified against municipal civil registry."
+        },
+        {
+          "status": "Pending Approval",
+          "timestamp": "2026-10-01T14:10:00Z",
+          "actor": "Senior Inspector R. Shinde",
+          "actorRole": "Supply Officer",
+          "remarks": "Eligible for adding 1 member (Family size will become 5 <= 15). Recommended for approval."
+        }
+      ]
+    },
+    {
+      "id": "RS-2026-000102",
+      "type": "NEW_CARD",
+      "applicantName": "Ramesh Ganpat Kale",
+      "mobile": "9822001122",
+      "aadhaar": "XXXXXXXX7719",
+      "rationCardNo": "PENDING_ISSUANCE",
+      "familyMembersCount": 5,
+      "annualIncome": 140000,
+      "category": "NPHH (Non-Priority)",
+      "address": "House 28, Ward 4, Junnar, District Pune",
+      "subDistrict": "Junnar",
+      "documents": [
+        {
+          "name": "tahsildar_income_cert.pdf",
+          "sizeKb": 512,
+          "type": "application/pdf",
+          "uploadedAt": "2026-09-26T10:00:00Z"
+        },
+        {
+          "name": "electricity_bill_residence.pdf",
+          "sizeKb": 290,
+          "type": "application/pdf",
+          "uploadedAt": "2026-09-26T10:05:00Z"
+        }
+      ],
+      "status": "Under Verification",
+      "submittedAt": "2026-09-26T10:05:00Z",
+      "ruleVersion": "v1.0",
+      "slaDays": 15,
+      "slaBreached": false,
+      "history": [
+        {
+          "status": "Submitted",
+          "timestamp": "2026-09-26T10:05:00Z",
+          "actor": "Ramesh Kale",
+          "actorRole": "Citizen"
+        },
+        {
+          "status": "Under Verification",
+          "timestamp": "2026-09-27T16:00:00Z",
+          "actor": "Clerk D. More",
+          "actorRole": "Supply Officer",
+          "remarks": "Address verification letter dispatched to Junnar circle inspector."
+        }
+      ]
+    },
+    {
+      "id": "RS-2026-000103",
+      "type": "ADDRESS_CHANGE",
+      "applicantName": "Sunita Ramesh Patil",
+      "mobile": "9876543210",
+      "aadhaar": "XXXXXXXX4821",
+      "rationCardNo": "MH-PN-1023",
+      "familyMembersCount": 4,
+      "annualIncome": 85000,
+      "category": "PHH (Priority)",
+      "address": "Flat 402, Sai Vihar, Kothrud, District Pune",
+      "subDistrict": "Pune City",
+      "documents": [
+        {
+          "name": "registered_rent_agreement.pdf",
+          "sizeKb": 780,
+          "type": "application/pdf",
+          "uploadedAt": "2026-09-18T14:20:00Z"
+        },
+        {
+          "name": "gas_connection_slip.jpg",
+          "sizeKb": 310,
+          "type": "image/jpeg",
+          "uploadedAt": "2026-09-18T14:21:00Z"
+        }
+      ],
+      "status": "Approved",
+      "submittedAt": "2026-09-18T14:21:00Z",
+      "ruleVersion": "v1.0",
+      "slaDays": 15,
+      "slaBreached": false,
+      "history": [
+        {
+          "status": "Submitted",
+          "timestamp": "2026-09-18T14:21:00Z",
+          "actor": "Sunita Patil",
+          "actorRole": "Citizen"
+        },
+        {
+          "status": "Under Verification",
+          "timestamp": "2026-09-20T10:00:00Z",
+          "actor": "Inspector R. Shinde",
+          "actorRole": "Supply Officer"
+        },
+        {
+          "status": "Pending Approval",
+          "timestamp": "2026-09-22T11:00:00Z",
+          "actor": "Inspector R. Shinde",
+          "actorRole": "Supply Officer"
+        },
+        {
+          "status": "Approved",
+          "timestamp": "2026-09-24T15:30:00Z",
+          "actor": "District Supply Officer",
+          "actorRole": "Supply Officer",
+          "remarks": "Address updated to Kothrud circle. FPS allocation shifted to Shop 142."
+        },
+        {
+          "status": "Card Issued",
+          "timestamp": "2026-09-25T11:00:00Z",
+          "actor": "System",
+          "actorRole": "System",
+          "remarks": "Updated digital ration card dispatched via SMS link."
+        }
+      ]
+    },
+    {
+      "id": "RS-2026-000104",
+      "type": "DUPLICATE",
+      "applicantName": "Anil Baban Jadhav",
+      "mobile": "9890011223",
+      "aadhaar": "XXXXXXXX9921",
+      "rationCardNo": "MH-PN-0877",
+      "familyMembersCount": 3,
+      "annualIncome": 60000,
+      "category": "PHH (Priority)",
+      "address": "Ganesh Krupa Niwas, Baramati, District Pune",
+      "subDistrict": "Baramati",
+      "documents": [
+        {
+          "name": "police_loss_dairy_extract.pdf",
+          "sizeKb": 410,
+          "type": "application/pdf",
+          "uploadedAt": "2026-10-01T08:30:00Z"
+        }
+      ],
+      "status": "Submitted",
+      "submittedAt": "2026-10-01T08:30:00Z",
+      "ruleVersion": "v1.0",
+      "slaDays": 15,
+      "slaBreached": false,
+      "history": [
+        {
+          "status": "Submitted",
+          "timestamp": "2026-10-01T08:30:00Z",
+          "actor": "Anil Jadhav",
+          "actorRole": "Citizen"
+        }
+      ]
+    },
+    {
+      "id": "RS-2026-000105",
+      "type": "REMOVE_MEMBER",
+      "applicantName": "Meena Eknath Shinde",
+      "mobile": "9765432109",
+      "aadhaar": "XXXXXXXX3312",
+      "rationCardNo": "MH-PN-0456",
+      "familyMembersCount": 6,
+      "annualIncome": 95000,
+      "category": "PHH (Priority)",
+      "address": "House 10, Somwar Peth, Ambegaon, District Pune",
+      "subDistrict": "Ambegaon",
+      "documents": [
+        {
+          "name": "marriage_registration_daughter.pdf",
+          "sizeKb": 620,
+          "type": "application/pdf",
+          "uploadedAt": "2026-09-12T11:00:00Z"
+        }
+      ],
+      "status": "Clarification Required",
+      "submittedAt": "2026-09-12T11:00:00Z",
+      "ruleVersion": "v1.0",
+      "slaDays": 15,
+      "slaBreached": true,
+      "history": [
+        {
+          "status": "Submitted",
+          "timestamp": "2026-09-12T11:00:00Z",
+          "actor": "Meena Shinde",
+          "actorRole": "Citizen"
+        },
+        {
+          "status": "Under Verification",
+          "timestamp": "2026-09-14T10:00:00Z",
+          "actor": "Clerk P. Joshi",
+          "actorRole": "Supply Officer"
+        },
+        {
+          "status": "Clarification Required",
+          "timestamp": "2026-09-20T16:45:00Z",
+          "actor": "Inspector R. Shinde",
+          "actorRole": "Supply Officer",
+          "remarks": "Marriage certificate seal is blurred and unreadable. Please upload a clear scanned copy of the registrar endorsement."
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "version": "v1.3",
+      "effectiveFrom": "2026-10-18",
+      "publishedAt": "2026-10-03T17:13:35.979Z",
+      "publishedBy": "State Food & Civil Supplies Dept",
+      "governmentOrderRef": "GO-MS-12/2027/FCS",
+      "summary": "Raising priority household (PHH) annual income limit from ₹1,00,000 to ₹1,20,000 as per state cabinet revision.",
+      "rules": [
+        {
+          "type": "NEW_CARD",
+          "incomeLimit": 100000,
+          "minMembers": 1,
+          "maxMembers": 15,
+          "requiredDocs": [
+            "Proof of Residence",
+            "Aadhaar Cards of all members",
+            "Income Certificate from Tahsildar"
+          ]
+        },
+        {
+          "type": "ADD_MEMBER",
+          "incomeLimit": 100000,
+          "minMembers": 1,
+          "maxMembers": 15,
+          "requiredDocs": [
+            "Birth Certificate / Marriage Certificate",
+            "Aadhaar Card of New Member"
+          ]
+        },
+        {
+          "type": "REMOVE_MEMBER",
+          "incomeLimit": 100000,
+          "minMembers": 1,
+          "maxMembers": 15,
+          "requiredDocs": [
+            "Death Certificate / Marriage Certificate / Migration NOC"
+          ]
+        },
+        {
+          "type": "ADDRESS_CHANGE",
+          "incomeLimit": 100000,
+          "minMembers": 1,
+          "maxMembers": 15,
+          "requiredDocs": [
+            "New Electricity Bill / Water Bill / Registered Lease Deed"
+          ]
+        },
+        {
+          "type": "DUPLICATE",
+          "incomeLimit": 100000,
+          "minMembers": 1,
+          "maxMembers": 15,
+          "requiredDocs": [
+            "Police Lost-Report / Self-Declaration Affidavit / Damaged Card"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "v1.2",
+      "effectiveFrom": "2026-10-18",
+      "publishedAt": "2026-10-03T17:13:26.683Z",
+      "publishedBy": "State Food & Civil Supplies Dept",
+      "governmentOrderRef": "GO-MS-12/2027/FCS",
+      "summary": "Raising priority household (PHH) annual income limit from ₹1,00,000 to ₹1,20,000 as per state cabinet revision.",
+      "rules": [
+        {
+          "type": "NEW_CARD",
+          "incomeLimit": 100000,
+          "minMembers": 1,
+          "maxMembers": 15,
+          "requiredDocs": [
+            "Proof of Residence",
+            "Aadhaar Cards of all members",
+            "Income Certificate from Tahsildar"
+          ]
+        },
+        {
+          "type": "ADD_MEMBER",
+          "incomeLimit": 100000,
+          "minMembers": 1,
+          "maxMembers": 15,
+          "requiredDocs": [
+            "Birth Certificate / Marriage Certificate",
+            "Aadhaar Card of New Member"
+          ]
+        },
+        {
+          "type": "REMOVE_MEMBER",
+          "incomeLimit": 100000,
+          "minMembers": 1,
+          "maxMembers": 15,
+          "requiredDocs": [
+            "Death Certificate / Marriage Certificate / Migration NOC"
+          ]
+        },
+        {
+          "type": "ADDRESS_CHANGE",
+          "incomeLimit": 100000,
+          "minMembers": 1,
+          "maxMembers": 15,
+          "requiredDocs": [
+            "New Electricity Bill / Water Bill / Registered Lease Deed"
+          ]
+        },
+        {
+          "type": "DUPLICATE",
+          "incomeLimit": 100000,
+          "minMembers": 1,
+          "maxMembers": 15,
+          "requiredDocs": [
+            "Police Lost-Report / Self-Declaration Affidavit / Damaged Card"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "v1.1",
+      "effectiveFrom": "2026-10-18",
+      "publishedAt": "2026-10-03T17:10:47.720Z",
+      "publishedBy": "State Food & Civil Supplies Dept",
+      "governmentOrderRef": "GO-MS-12/2027/FCS",
+      "summary": "Raising priority household (PHH) annual income limit from ₹1,00,000 to ₹1,20,000 as per state cabinet revision.",
+      "rules": [
+        {
+          "type": "NEW_CARD",
+          "incomeLimit": 100000,
+          "minMembers": 1,
+          "maxMembers": 15,
+          "requiredDocs": [
+            "Proof of Residence",
+            "Aadhaar Cards of all members",
+            "Income Certificate from Tahsildar"
+          ]
+        },
+        {
+          "type": "ADD_MEMBER",
+          "incomeLimit": 100000,
+          "minMembers": 1,
+          "maxMembers": 15,
+          "requiredDocs": [
+            "Birth Certificate / Marriage Certificate",
+            "Aadhaar Card of New Member"
+          ]
+        },
+        {
+          "type": "REMOVE_MEMBER",
+          "incomeLimit": 100000,
+          "minMembers": 1,
+          "maxMembers": 15,
+          "requiredDocs": [
+            "Death Certificate / Marriage Certificate / Migration NOC"
+          ]
+        },
+        {
+          "type": "ADDRESS_CHANGE",
+          "incomeLimit": 100000,
+          "minMembers": 1,
+          "maxMembers": 15,
+          "requiredDocs": [
+            "New Electricity Bill / Water Bill / Registered Lease Deed"
+          ]
+        },
+        {
+          "type": "DUPLICATE",
+          "incomeLimit": 100000,
+          "minMembers": 1,
+          "maxMembers": 15,
+          "requiredDocs": [
+            "Police Lost-Report / Self-Declaration Affidavit / Damaged Card"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "v1.0",
+      "effectiveFrom": "2026-11-01",
+      "publishedAt": "2026-10-15T10:00:00Z",
+      "publishedBy": "State Food & Civil Supplies Dept",
+      "governmentOrderRef": "GO-MS-01/2026/FCS",
+      "summary": "Baseline statutory parameters: Annual household income <= ₹1,00,000 for Priority Household (PHH); family members allowed 1 to 15.",
+      "rules": [
+        {
+          "type": "NEW_CARD",
+          "incomeLimit": 100000,
+          "minMembers": 1,
+          "maxMembers": 15,
+          "requiredDocs": [
+            "Proof of Residence",
+            "Aadhaar Cards of all members",
+            "Income Certificate from Tahsildar"
+          ]
+        },
+        {
+          "type": "ADD_MEMBER",
+          "incomeLimit": 100000,
+          "minMembers": 1,
+          "maxMembers": 15,
+          "requiredDocs": [
+            "Birth Certificate / Marriage Certificate",
+            "Aadhaar Card of New Member"
+          ]
+        },
+        {
+          "type": "REMOVE_MEMBER",
+          "incomeLimit": 100000,
+          "minMembers": 1,
+          "maxMembers": 15,
+          "requiredDocs": [
+            "Death Certificate / Marriage Certificate / Migration NOC"
+          ]
+        },
+        {
+          "type": "ADDRESS_CHANGE",
+          "incomeLimit": 100000,
+          "minMembers": 1,
+          "maxMembers": 15,
+          "requiredDocs": [
+            "New Electricity Bill / Water Bill / Registered Lease Deed"
+          ]
+        },
+        {
+          "type": "DUPLICATE",
+          "incomeLimit": 100000,
+          "minMembers": 1,
+          "maxMembers": 15,
+          "requiredDocs": [
+            "Police Lost-Report / Self-Declaration Affidavit / Damaged Card"
+          ]
+        }
+      ]
+    }
+  ],
+  "activeRuleVersion": "v1.3",
+  "smsLog": [
+    {
+      "id": "SMS-6095",
+      "requestId": "RS-2026-000109",
+      "mobile": "9876543210",
+      "message": "RationSeva: Your Ration Card for RS-2026-000109 has been issued. Download digital copy or collect from DSO.",
+      "sentAt": "2026-10-05T04:39:46.095Z",
+      "delivered": true
+    },
+    {
+      "id": "SMS-9029",
+      "requestId": "RS-2026-000109",
+      "mobile": "9876543210",
+      "message": "RationSeva: Congratulations! Your request RS-2026-000109 has been APPROVED by the Supply Officer.",
+      "sentAt": "2026-10-05T04:39:39.029Z",
+      "delivered": true
+    },
+    {
+      "id": "SMS-9420",
+      "requestId": "RS-2026-000109",
+      "mobile": "9876543210",
+      "message": "RationSeva: Your application RS-2026-000109 for NEW_CARD has been submitted. Track progress at rationseva.maha.gov.in.",
+      "sentAt": "2026-10-05T04:38:39.420Z",
+      "delivered": true
+    },
+    {
+      "id": "SMS-5081",
+      "requestId": "RS-2026-000108",
+      "mobile": "9876543210",
+      "message": "RationSeva: Your application RS-2026-000108 for ADD_MEMBER has been submitted. Track progress at rationseva.maha.gov.in.",
+      "sentAt": "2026-10-05T04:33:55.081Z",
+      "delivered": true
+    },
+    {
+      "id": "OTP-6842",
+      "requestId": "AUTH",
+      "mobile": "9876543210",
+      "message": "RationSeva: Your verification code is 123456. Valid for 5 minutes. Do not share with anyone.",
+      "sentAt": "2026-10-05T03:50:06.842Z",
+      "delivered": true
+    },
+    {
+      "id": "SMS-4465",
+      "requestId": "RS-2026-000107",
+      "mobile": "9876543210",
+      "message": "RationSeva: Your Ration Card for RS-2026-000107 has been issued. Download digital copy or collect from DSO.",
+      "sentAt": "2026-10-04T18:09:04.465Z",
+      "delivered": true
+    },
+    {
+      "id": "SMS-5025",
+      "requestId": "RS-2026-000107",
+      "mobile": "9876543210",
+      "message": "RationSeva: Congratulations! Your request RS-2026-000107 has been APPROVED by the Supply Officer.",
+      "sentAt": "2026-10-04T18:08:15.025Z",
+      "delivered": true
+    },
+    {
+      "id": "SMS-2375",
+      "requestId": "RS-2026-000107",
+      "mobile": "9876543210",
+      "message": "RationSeva: Application RS-2026-000107 is under document verification by District Supply Office.",
+      "sentAt": "2026-10-04T18:08:12.375Z",
+      "delivered": true
+    },
+    {
+      "id": "SMS-8092",
+      "requestId": "RS-2026-000107",
+      "mobile": "9876543210",
+      "message": "RationSeva: Your application RS-2026-000107 for NEW_CARD has been submitted. Track progress at rationseva.maha.gov.in.",
+      "sentAt": "2026-10-04T18:07:18.092Z",
+      "delivered": true
+    },
+    {
+      "id": "OTP-0652",
+      "requestId": "AUTH",
+      "mobile": "9876543210",
+      "message": "RationSeva: Your verification code is 123456. Valid for 5 minutes. Do not share with anyone.",
+      "sentAt": "2026-10-03T17:12:30.652Z",
+      "delivered": true
+    },
+    {
+      "id": "SMS-3527",
+      "requestId": "RS-2026-000106",
+      "mobile": "9876543210",
+      "message": "RationSeva: Your Ration Card for RS-2026-000106 has been issued. Download digital copy or collect from DSO.",
+      "sentAt": "2026-10-03T17:09:13.526Z",
+      "delivered": true
+    },
+    {
+      "id": "SMS-0645",
+      "requestId": "RS-2026-000106",
+      "mobile": "9876543210",
+      "message": "RationSeva: Congratulations! Your request RS-2026-000106 has been APPROVED by the Supply Officer.",
+      "sentAt": "2026-10-03T17:09:10.645Z",
+      "delivered": true
+    },
+    {
+      "id": "SMS-0048",
+      "requestId": "RS-2026-000106",
+      "mobile": "9876543210",
+      "message": "RationSeva: Application RS-2026-000106 is under document verification by District Supply Office.",
+      "sentAt": "2026-10-03T17:09:00.048Z",
+      "delivered": true
+    },
+    {
+      "id": "SMS-9310",
+      "requestId": "RS-2026-000106",
+      "mobile": "9876543210",
+      "message": "RationSeva: Your application RS-2026-000106 for NEW_CARD has been submitted. Track progress at rationseva.maha.gov.in.",
+      "sentAt": "2026-10-03T16:44:59.310Z",
+      "delivered": true
+    },
+    {
+      "id": "SMS-101",
+      "requestId": "RS-2026-000101",
+      "mobile": "9876543210",
+      "message": "RationSeva: Your request RS-2026-000101 (Add Member) has been received. Track at rationseva.maha.gov.in.",
+      "sentAt": "2026-09-28T09:16:05Z",
+      "delivered": true
+    },
+    {
+      "id": "SMS-103",
+      "requestId": "RS-2026-000103",
+      "mobile": "9876543210",
+      "message": "RationSeva: Your request RS-2026-000103 has been APPROVED by the District Supply Officer. Card issued.",
+      "sentAt": "2026-09-24T15:30:05Z",
+      "delivered": true
+    }
+  ],
+  "otpStore": {}
+}

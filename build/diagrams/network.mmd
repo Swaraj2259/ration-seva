@@ -1,0 +1,12 @@
+flowchart LR
+    S((Start)) --> A["A: Requirements<br/>6d | ES 0 EF 6<br/>LS 0 LF 6 | F 0"]
+    A --> B["B: Service rules<br/>8d | ES 6 EF 14<br/>LS 6 LF 14 | F 0"]
+    A --> C["C: Application portal<br/>14d | ES 6 EF 20<br/>LS 17 LF 31 | F 11"]
+    B --> D["D: Officer approval<br/>12d | ES 14 EF 26<br/>LS 14 LF 26 | F 0"]
+    D --> E["E: Status & SMS<br/>5d | ES 26 EF 31<br/>LS 26 LF 31 | F 0"]
+    C --> F["F: Testing<br/>8d | ES 31 EF 39<br/>LS 31 LF 39 | F 0"]
+    E --> F
+    F --> G["G: Staff training<br/>5d | ES 39 EF 44<br/>LS 39 LF 44 | F 0"]
+    G --> X((End: Day 44))
+    classDef crit fill:#ffd6d6,stroke:#c00,stroke-width:2px
+    class A,B,D,E,F,G crit

@@ -1,0 +1,70 @@
+flowchart LR
+    %% Clean System Design (HLD) Architecture for RationSeva
+
+    subgraph CLIENTS["1. Clients"]
+        direction TB
+        C1["📱 Citizen (Mobile & Web)"]
+        C2["🖥️ District Officer & Clerk"]
+        C3["🏛️ Policy Admin"]
+    end
+
+    subgraph INGRESS["2. Edge & Load Balancer"]
+        direction TB
+        CDN["🌐 CDN / CloudFront<br/>(Static Web Assets & Caching)"]
+        LB["⚖️ Load Balancer / Reverse Proxy<br/>(Traffic Routing & SSL)"]
+    end
+
+    subgraph SERVICES["3. Backend Services"]
+        direction TB
+        INTAKE["📝 Intake & Validation Service<br/>(Form Validation & BVA Checks)"]
+        RULES["⚙️ Eligibility Rule Engine<br/>(Versioned State Schemes)"]
+        APPROVAL["⚖️ Officer Approval Service<br/>(FIFO Queue & Review Remarks)"]
+    end
+
+    subgraph PUBSUB["4. Pub/Sub Queue (Decoupling)"]
+        direction TB
+        QUEUE["📬 Pub/Sub / Message Queue<br/>(Buffers & Decouples Requests)"]
+        NOTIF["📲 Notification Worker<br/>(Consumes Events)"]
+        SMS["📡 Telecom SMS Gateway<br/>(Citizen Alerts)"]
+    end
+
+    subgraph STORAGE["5. Storage & Caching"]
+        direction TB
+        S3[("📁 S3 Object Storage<br/>(PDF/JPG Proofs &le; 2 MB)<br/><b>Eliminates 120 Misplaced Files/Mo</b>")]
+        DB[("🗄️ Relational Database (PostgreSQL)<br/>(Applications, Cards, 100% Audit Log)")]
+        REDIS[("⚡ Redis Cache<br/>(Active Rules & 5-min OTPs)")]
+    end
+
+    CLIENTS --> CDN
+    CDN --> LB
+    LB --> INTAKE
+    LB --> APPROVAL
+    LB --> RULES
+
+    INTAKE -->|"Check Eligibility"| RULES
+    INTAKE -->|"Upload Proofs"| S3
+    INTAKE -->|"Save Application"| DB
+    INTAKE -->|"Publish Event"| QUEUE
+
+    RULES <-->|"Cache Rules"| REDIS
+    RULES -->|"Read Rules"| DB
+
+    QUEUE -->|"Async Pull"| APPROVAL
+    QUEUE -->|"Trigger SMS"| NOTIF
+    NOTIF --> SMS
+
+    APPROVAL -->|"Save Decision"| DB
+    APPROVAL -->|"Verify"| RULES
+
+    %% Styling
+    classDef client fill:#fcfaf5,stroke:#a67c52,stroke-width:2px,color:#4a3f35;
+    classDef ingress fill:#f7f2e7,stroke:#8d6e4c,stroke-width:2px,color:#4a3f35;
+    classDef service fill:#fffdfa,stroke:#735a3a,stroke-width:2px,color:#4a3f35;
+    classDef pubsub fill:#fff8eb,stroke:#b35900,stroke-width:2px,color:#4a3f35;
+    classDef storage fill:#f2f7f2,stroke:#2a662e,stroke-width:2px,color:#2a442c;
+
+    class CLIENTS,C1,C2,C3 client;
+    class INGRESS,CDN,LB ingress;
+    class SERVICES,INTAKE,RULES,APPROVAL service;
+    class PUBSUB,QUEUE,NOTIF,SMS pubsub;
+    class STORAGE,S3,DB,REDIS storage;
